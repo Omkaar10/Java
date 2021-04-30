@@ -1,0 +1,63 @@
+Class
+- a blueprint for a house, you use the blueprint to build many houses.
+- each house you build is object also known as instance.
+- each house you build has an address - this is called reference.
+- we can pass references to programs and constructors.
+
+difference between this and super keyword
+- super is used to access or call parent class member
+- this is used to access or call current class member
+- cannot use them in static methods.
+
+- this is used in constructor and getters but not in setters
+
+
+- super is used in method overriding, calls method with same name as parent class
+
+- this() used to call another constructor in constructor overloading.
+- super() used to call parent constructor.
+call to super constructor must be first operation.
+
+constructor can call this() or super() but not both.
+use constructor chaining -  to avoid code duplication.
+
+Method overiding and method overloading
+
+Method overloading
+- overloading means providing 2 or more separate method with same name but different parameters
+- method return type may or may not be same.
+- overloading have nothing to do with polymorphism but referred as compile time polymorphism.
+- overloading happens inside a single class but a method can be overloaded in subclass of that class.
+methods must have same name, different parameters.
+
+
+Method Overriding
+- defining methiod in child clas that exists in parent class with same signature.
+- known as runtime polymorphism.
+- it is recommended to put @Override, before overridden method.
+
+must have same name and arguments
+return type can be subclass of return type.
+it cant have lower access modifier.
+
+only inherited method can be overridden.
+contructor and private methods cannot be overridden.
+methods that are final cannot be overridden.
+a subclasss can use super.methodname() to call super class overridden method.
+
+
+
+
+Static and Instance methods
+
+Static method are decalred using static modifier
+cant access instance method and variables
+cant use this() keyword.
+a method which doesnt use instance variable should be made static method.
+
+
+Instance methods
+belong to specific instance of class
+have to instatiate a class before use.
+can use instance method and variables.
+
