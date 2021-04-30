@@ -1,0 +1,38 @@
+what is an array?
+
+An array is a finite and ordered collection of homogeneous data elements. It is finite because it contains a limited number of elements.
+It is ordered because all the elements are stored one by one in a contiguous location of computer memory (heap) in a linear fashion.
+It is homogeneous because all elements of an array are of the same data type only. We can store either primitive types or object references into it.
+
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+for eg - if we want to store a list of numbers 1-10.
+method 1 -  declare 10 int variables, use for loop to take input.
+method 2 -make use of arrays
+
+defining array  = datatype[] variablename = new datatype[length array];
+
+looping through array - normal for or using for each
+
+multidimensional array -  array inside an array
+defining nested array  = datatype[][] variablename = new datatype[length array][inner array length];
+we can traverse using a nested for loop.
+
+copying array - using for loop and using System.arrayCopy.
+
+can we assign array without size? no, it throws compile time error
+can we declare negative array size? no it throws run time error
+
+
+Advantages of Array
+-We can store multiple elements of the same type under a single variable.
+-We can implement other data structures such as Stack, Queue, Tree, etc. with the help of an array.
+-We can fetch data elements using the index at run time.
+
+Disadvantages of Array
+-Before using an array, it is mandatory to declare its size.
+-It is a static structure, so we cannot increase or decreases memory allocation.
+-Insertion and deletion operations are difficult because elements stored at the contiguous memory location. It also increases the cost.
+-Allocate more memory than required is the wastage of memory.
+
+reference type and value type.
+-example of int and array
